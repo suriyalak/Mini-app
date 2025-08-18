@@ -75,8 +75,8 @@ if st.button('ต่อไป'):
 st.subheader("ใส่ค่าพิกัดที่ต้องการ")
 
 # สร้าง input field สำหรับรับค่า latitude และ longitude
-lat = st.number_input('Latitude', min_value=-90.0, max_value=90.0, value=19.11)
-lon = st.number_input('Longitude', min_value=-180.0, max_value=180.0, value=99.52)
+lat = st.number_input('Latitude', min_value=-90.0, max_value=90.0, value=19.11, format='%.5f', step=0.00001)
+lon = st.number_input('Longitude', min_value=-180.0, max_value=180.0, value=99.52, format='%.5f', step=0.00001)
 
 # ส่วนของปุ่ม
 if st.button('ตกลง'):
